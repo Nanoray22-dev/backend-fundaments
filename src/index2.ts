@@ -1,14 +1,14 @@
 import express from 'express';
-import { heroeRoute } from './heroe/routes';
+import { villainRoute } from './Villain/routes';
 import { AppDataSource } from './datasources';
-import { Hero } from './heroe/models/heroe.entity';
+import { Villain } from './Villain/SuperVillain/Vilain.entity';
 
-const port = 3000;
+const port = 3001;
 const app = express();
 
 app.use(express.json());
 
-app.use('/villain ', heroeRoute);
+app.use('/villain', villainRoute);
 // AppDataSource.getRepository(Heroe)
 app.listen(port, () => {
     console.log(`The application is listening on port ${port}!`);

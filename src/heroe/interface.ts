@@ -1,5 +1,7 @@
-export interface Heroe {
+export interface Hero {
   id: Number,
-  nombre: String,
-  alte: String
+  name : String,
+  alte: String,
+  occupation: String,
+  novia:boolean
 }

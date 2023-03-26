@@ -1,20 +1,31 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
-export class Heroe {
+export class Hero {
 
     @PrimaryGeneratedColumn()
     id!: number;
 
-    @Column('text')
+    @Column('varchar')
     name!: string;
 
-    @Column('text')
+    @Column('varchar')
     alte!: string;
+
+    @Column('varchar')
+    occupation!: string;
+
+    @Column('bit')
+    novia!:boolean
 } 
+
+
+
+
+
 // documentacion 
-// entry Level 0-6
-// junior 6meses-2
+// entry Level 0-6 meses
+// junior 6 meses - 2 años
 // mid-level
 // senior
 // crud / sql view / procedure / trigger / join / subquery 
