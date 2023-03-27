@@ -1,7 +1,7 @@
 import { DataSource, Entity } from "typeorm"
-// import { Hero } from './heroe/models/heroe.entity';
+import { Hero } from './heroe/models/heroe.entity';
 import 'reflect-metadata';
-import { Villain } from "./Villain/SuperVillain/Vilain.entity";
+import { Villain } from "./heroe/models/Vilain.entity";
 
 export const AppDataSource = new DataSource({
     type: "mssql",
@@ -15,7 +15,7 @@ export const AppDataSource = new DataSource({
     options: {
         encrypt: false,
     },
-    entities: [Villain]
+    entities: [Villain,Hero]
 });
 AppDataSource.initialize()
     .then(() => {

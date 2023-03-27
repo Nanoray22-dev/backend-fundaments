@@ -1,7 +1,7 @@
 import {Request, Response} from "express"
 import { Villain as SuperVillain} from "./interfaces"
 import { AppDataSource } from "../datasources"
-import { Villain } from "./SuperVillain/Vilain.entity"
+import { Villain } from "../heroe/models/Vilain.entity"
 
 const villainRepository = AppDataSource.getRepository(Villain);
 

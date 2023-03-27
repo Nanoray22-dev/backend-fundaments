@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/villain ', heroeRoute);
+app.use('/heroe/', heroeRoute);
 // AppDataSource.getRepository(Heroe)
 app.listen(port, () => {
     console.log(`The application is listening on port ${port}!`);

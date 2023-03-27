@@ -11,6 +11,6 @@ export class Villain{
     @Column('text')
     weakness!:String
 
-    @Column('boolean')
+    @Column('text')
     SuperVillain!: String
 }
